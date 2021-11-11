@@ -11,9 +11,7 @@ function App() {
   const [events, setEvents] = useState([]);
 
   const addEvent = (event) => {
-    setEvents((prevEvents) => {
-      return [...prevEvents, event];
-    });
+    setEvents((prevEvents) => [...prevEvents, event]);
     closeModal();
   };
 
